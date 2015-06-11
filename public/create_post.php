@@ -22,10 +22,12 @@ if ($_POST) {
 	$post->title = $_POST['title'];
 
 	$post->content = $_POST['content'];
+	
+	$post->date_posted = date('Y-m-d H:i:s');
 
 	$post->save();
 
-	// URL::redirect('edit_post.php?id='$post->id);
+   URL::redirect('index.php');
 }
 
 	#views

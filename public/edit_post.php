@@ -6,8 +6,7 @@ require_once '../libraries/login.lib.php';
 require_once '../libraries/form.lib.php';
 
 require_once '../models/post.model.php';
-require_once '../models/posts.collections.php';
-require_once '../models/pages.collections.php';
+require_once '../models/posts.collection.php';
 
 	#logic
 
