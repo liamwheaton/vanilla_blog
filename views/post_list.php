@@ -1,6 +1,6 @@
 <div class="main">
 
-	<h1>Posts</h1>
+	<h1>Feed</h1>
 	
 	<?php $posts = new Posts_Collection([
 			'deleted' => '0'
@@ -14,7 +14,8 @@
 			<p><?= $post_items->content ?></p>
 			<p>Posted by User ID: <?= $post_items->user_id ?></p>
 			<p>at: <?= $post_items->date_posted ?></p>
-			<a href="edit_post.php">Edit</a>
+			<a href="edit_post.php?id=<?= $post_items->id ?>">Edit</a>
+			<a href="delete_post.php?id=<?= $post_items->id ?>">Delete</a>
 		</div>
 
 	<? endforeach ?>

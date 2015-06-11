@@ -11,7 +11,7 @@ require_once '../models/posts.collection.php';
 
 	#logic
 
-// Login::kickout();
+Login::kickout();
 
 $post_title = "Create New Post";
 
@@ -22,7 +22,7 @@ if ($_POST) {
 	$post->title = $_POST['title'];
 
 	$post->content = $_POST['content'];
-	
+
 	$post->date_posted = date('Y-m-d H:i:s');
 
 	$post->save();

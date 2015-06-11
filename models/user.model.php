@@ -26,9 +26,11 @@ class User extends Model {
 				$this->id = $user['id'];
 				return true;
 			}else{
+			
 				return false;
 			}
 		}else{
+			
 			return false;
 		}
 	}

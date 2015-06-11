@@ -10,7 +10,7 @@ require_once '../models/posts.collection.php';
 
 	#logic
 
-// Login::kickout();
+Login::kickout();
 
 $post = new Post();
 

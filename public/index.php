@@ -12,15 +12,7 @@ require_once '../models/posts.collection.php';
 
 	#logic
 
-// if ($_GET['post']) {
-// 	$id = $_GET['post'];
-// }else{
-// 	$id = 1;
-// }
 
-// $post = new Post();
-
-// $post->load($id);
 
 	#views
 
