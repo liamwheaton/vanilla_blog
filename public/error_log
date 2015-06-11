@@ -1,0 +1,7 @@
+[10-Jun-2015 16:50:31 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/liamwheaton/public_html/vanilla_blog/views/header.php on line 15
+[10-Jun-2015 16:51:09 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/liamwheaton/public_html/vanilla_blog/views/header.php on line 15
+[10-Jun-2015 16:51:11 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/liamwheaton/public_html/vanilla_blog/views/header.php on line 15
+[10-Jun-2015 16:54:14 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/liamwheaton/public_html/vanilla_blog/views/header.php on line 15
+[10-Jun-2015 16:54:16 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/liamwheaton/public_html/vanilla_blog/views/header.php on line 15
+[11-Jun-2015 13:34:12 Pacific/Auckland] PHP Warning:  require_once(../models/posts.model.php): failed to open stream: No such file or directory in /home/liamwheaton/public_html/vanilla_blog/public/create_post.php on line 10
+[11-Jun-2015 13:34:12 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../models/posts.model.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/liamwheaton/public_html/vanilla_blog/public/create_post.php on line 10
