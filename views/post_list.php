@@ -1,8 +1,6 @@
 <div class="main">
 
 	<h1>Feed</h1>
-
-	<?php URL::save(); ?>
 	
 	<?php $posts = new Posts_Collection([
 				'deleted' => '0'
