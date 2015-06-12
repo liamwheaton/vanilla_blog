@@ -3,8 +3,8 @@
 	<h1>Feed</h1>
 	
 	<?php $posts = new Posts_Collection([
-			'deleted' => '0'
-		]); 
+				'deleted' => '0'
+			]); 
 	?>
 
 	<? foreach ($posts->items as $post_items): ?>
@@ -14,7 +14,7 @@
 			<p><?= $post_items->content ?></p>
 			<p>Posted by User ID: <?= $post_items->user_id ?></p>
 			<p>at: <?= $post_items->date_posted ?></p>
-			<?php if($post_items->user_id == $users->id): ?>
+			<?php if($post_items->user_id == Login::user_id()): ?>
 				<a href="edit_post.php?id=<?= $post_items->id ?>">Edit</a>
 				<a href="delete_post.php?id=<?= $post_items->id ?>">Delete</a>
 			<?php endif; ?>
