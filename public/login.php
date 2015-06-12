@@ -31,5 +31,6 @@ if($_POST){
 	#views
 
 include '../views/header.php';
+include '../views/nav.php';
 include '../views/login_form.php';
 include '../views/footer.php';

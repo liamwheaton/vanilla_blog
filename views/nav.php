@@ -1,8 +1,6 @@
-		<nav>
-			<ul>
-				<li><a href="*">Timeline</a></li>
-				<li><a href="*">User Content</a></li>
-				<li><a href="*">Gigs</a></li>
-				<li><a href="*">My Account</a></li>
-			</ul>
-		</nav>
+<? if(Login::is_logged_in()): ?> 
+	<a href="create_post.php">New Post</a>
+	<a href="logout.php">Logout</a>
+<? else: ?>
+	<a href="login.php">Login</a>
+<? endif; ?>

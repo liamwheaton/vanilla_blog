@@ -14,8 +14,10 @@
 			<p><?= $post_items->content ?></p>
 			<p>Posted by User ID: <?= $post_items->user_id ?></p>
 			<p>at: <?= $post_items->date_posted ?></p>
-			<a href="edit_post.php?id=<?= $post_items->id ?>">Edit</a>
-			<a href="delete_post.php?id=<?= $post_items->id ?>">Delete</a>
+			<?php if($post_items->user_id == $users->id): ?>
+				<a href="edit_post.php?id=<?= $post_items->id ?>">Edit</a>
+				<a href="delete_post.php?id=<?= $post_items->id ?>">Delete</a>
+			<?php endif; ?>
 		</div>
 
 	<? endforeach ?>

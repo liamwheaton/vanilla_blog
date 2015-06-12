@@ -1,6 +1,8 @@
 <div>
 	<h1>Login</h1>
 
+	<a href="register.php">New Account</a>
+
 	<?= Form::open() ?>
 
 		<div class="row">

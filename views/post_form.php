@@ -17,5 +17,7 @@
 		<?= Form::submit() ?>
 
 	<?= Form::close() ?>
+
+	<a href="index.php">Cancel</a>
 		
 </div>

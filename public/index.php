@@ -17,5 +17,6 @@ require_once '../models/posts.collection.php';
 	#views
 
 include "../views/header.php";
+include "../views/nav.php";
 include "../views/post_list.php";
 include "../views/footer.php";
