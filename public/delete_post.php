@@ -8,6 +8,7 @@ require_once '../libraries/login.lib.php';
 require_once '../models/post.model.php';
 
 	#logic
+
 Login::kickout();
 
 $post = new Post();

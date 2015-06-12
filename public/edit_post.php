@@ -2,6 +2,7 @@
 
 	#libraries and models
 
+require_once '../libraries/url.lib.php';
 require_once '../libraries/login.lib.php';
 require_once '../libraries/form.lib.php';
 
@@ -25,9 +26,9 @@ if ($_POST) {
 	$post->content = $_POST['content'];
 
 	$post->save();
+
+	URL::redirect('index.php');
 }
-
-
 
 	#views
 
@@ -35,3 +36,4 @@ include '../views/header.php';
 include '../views/nav.php';
 include '../views/post_form.php';
 include '../views/footer.php';
+
