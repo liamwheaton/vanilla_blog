@@ -10,10 +10,15 @@ require_once '../models/post.model.php';
 	#logic
 
 Login::kickout();
+URL::save();
 
 $post = new Post();
 
 $post->load($_GET['id']);
+
+if ($post->user_id != Login::user_id()) {
+	URL::redirect('index.php');
+}
 
 $post->delete();
 

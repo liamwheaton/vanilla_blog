@@ -1,6 +1,8 @@
 <div class="main">
 
 	<h1>Feed</h1>
+
+	<?php URL::save(); ?>
 	
 	<?php $posts = new Posts_Collection([
 				'deleted' => '0'
@@ -19,13 +21,13 @@
 
 			<p>at: <?= $post_items->date_posted ?></p>
 
-			<?php if($post_items->user_id == Login::user_id()): ?>
+			<?php if($post_items->user_id == Login::user_id() && Login::is_logged_in()): ?>
 
 				<a href="edit_post.php?id=<?= $post_items->id ?>">Edit</a>
 				<a href="delete_post.php?id=<?= $post_items->id ?>">Delete</a>
 
 			<?php endif; ?>
-			
+
 		</div>
 
 	<? endforeach ?>

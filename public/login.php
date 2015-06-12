@@ -21,7 +21,7 @@ if($_POST){
 	if($success){
 		Login::log_in($user->id);
 
-		URL::redirect('index.php');
+		URL::restore();
 	}else{
 		echo "Failed to authenticate";
 	}

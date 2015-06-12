@@ -1,4 +1,5 @@
 <div class="main">
+	<?php URL::save(); ?>
 	
 
 	<?php $id = $_GET['id']; ?>
@@ -15,7 +16,7 @@
 
 	<p>at: <?= $post->date_posted ?></p>
 
-	<?php if($post->user_id == Login::user_id()): ?>
+	<?php if($post->user_id == Login::user_id() && Login::is_logged_in()): ?>
 
 		<a href="edit_post.php?id=<?= $post->id ?>">Edit</a>
 		<a href="delete_post.php?id=<?= $post->id ?>">Delete</a>

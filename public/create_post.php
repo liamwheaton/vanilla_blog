@@ -13,6 +13,7 @@ require_once '../models/posts.collection.php';
 	#logic
 
 Login::kickout();
+URL::save();
 
 $post_title = "Create New Post"; 
 

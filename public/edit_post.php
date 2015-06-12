@@ -12,12 +12,17 @@ require_once '../models/posts.collection.php';
 	#logic
 
 Login::kickout();
+URL::save();
 
 $post = new Post();
 
 $post_title = 'Edit Post';
 
 $post->load($_GET['id']);
+
+if ($post->user_id != Login::user_id()) {
+	URL::redirect('index.php');
+}
 
 if ($_POST) {
 

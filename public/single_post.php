@@ -3,6 +3,7 @@
 	#libraries and models
 
 require_once '../libraries/login.lib.php';
+require_once '../libraries/url.lib.php';
 
 require_once '../models/post.model.php';
 
