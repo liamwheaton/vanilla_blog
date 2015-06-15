@@ -7,22 +7,23 @@
 			]); 
 	?>
 
+
 	<? foreach ($posts->items as $post_items): ?>
 		
 		<div class="post_items">
 
-			<a href="single_post.php?id=<?= $post_items->id ?>"><?= $post_items->title ?></a>
+			<a class = 'post_title' href="single_post.php?id=<?= $post_items->id ?>"><?= $post_items->title ?></a>
 
-			<p><?= $post_items->content ?></p>
+			<div class ='post_content'><p><?= $post_items->content ?></p></div>
 
-			<p>Posted by User ID: <?= $post_items->user_id ?></p>
+			<div class = 'post_user'><p>Posted by User ID: <?= $post_items->user_id ?></p></div>
 
-			<p>at: <?= $post_items->date_posted ?></p>
+			<div class = 'post_date'><p>at: <?= $post_items->date_posted ?></p></div>
 
 			<?php if($post_items->user_id == Login::user_id() && Login::is_logged_in()): ?>
 
-				<a href="edit_post.php?id=<?= $post_items->id ?>">Edit</a>
-				<a href="delete_post.php?id=<?= $post_items->id ?>">Delete</a>
+				<a class = 'edit' href="edit_post.php?id=<?= $post_items->id ?>">Edit</a>
+				<a class = 'delete' href="delete_post.php?id=<?= $post_items->id ?>">Delete</a>
 
 			<?php endif; ?>
 

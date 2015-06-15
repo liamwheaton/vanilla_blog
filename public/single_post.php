@@ -15,7 +15,6 @@ require_once '../models/comments.collection.php';
 
 URL::save();
 
-
 	#views/redirect
 
 include "../views/header.php";

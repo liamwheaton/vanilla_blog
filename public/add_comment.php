@@ -29,7 +29,7 @@ if ($_POST) {
 
 	$comment->save();
 
-   URL::restore();
+	URL::restore();
 }
 
 	

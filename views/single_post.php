@@ -8,18 +8,18 @@
 
 	<?php $post->load($id); ?>
 
-	<h1><?= $post->title  ?></h1>
+	<h1 class = 'post_title'><?= $post->title  ?></h1>
 
-	<p><?= $post->content ?></p>
+	<div class ='post_content'><p><?= $post->content ?></p></div>
 
-	<p>Posted by User ID: <?= $post->user_id ?></p>
+	<div class = 'post_user'><p>Posted by User ID: <?= $post->user_id ?></p></div>
 
-	<p>at: <?= $post->date_posted ?></p>
+	<div class = 'post_date'><p>at: <?= $post->date_posted ?></p></div>
 
 	<?php if($post->user_id == Login::user_id() && Login::is_logged_in()): ?>
 
-		<a href="edit_post.php?id=<?= $post->id ?>">Edit</a>
-		<a href="delete_post.php?id=<?= $post->id ?>">Delete</a>
+		<a class = 'post_edit' href="edit_post.php?id=<?= $post->id ?>">Edit</a>
+		<a class = 'post_delete' href="delete_post.php?id=<?= $post->id ?>">Delete</a>
 
 	<?php endif; ?>
 
@@ -34,16 +34,16 @@
 
 			<div class="comment">
 
-				<p><?= $comment->content ?></p>
+				<div class="comment_content"><p><?= $comment->content ?></p></div>
 
-				<p>Posted by User ID: <?= $comment->user_id ?></p>
+				<div class="comment_user"><p>Posted by User ID: <?= $comment->user_id ?></p></div>
 
-				<p>at: <?= $comment->date_posted ?></p>
+				<div class="comment_date"><p>at: <?= $comment->date_posted ?></p></div>
 
-				<?php if($comment->user_id == Login::user_id() && Login::is_logged_in()): ?>
+				<?php if($comment->user_id == Login::user_id()): ?>
 
-					<a href="edit_comment.php?id=<?= $comment->id ?>">Edit</a>
-					<a href="delete_comment.php?id=<?= $comment->id ?>">Delete</a>
+					<a class = 'edit' href="edit_comment.php?id=<?= $comment->id ?>">Edit</a>
+					<a class = 'delete' href="delete_comment.php?id=<?= $comment->id ?>">Delete</a>
 
 				<?php endif; ?>
 				

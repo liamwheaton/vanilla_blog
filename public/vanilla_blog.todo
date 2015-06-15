@@ -23,12 +23,12 @@
 
 	Extra
 
-users able to comment on other users posts
-users able to edit THEIR OWN comment on other users posts
-users able to delete THEIR OWN comment on other users posts
++users able to comment on other users posts
++users able to edit THEIR OWN comment on other users posts
++users able to delete THEIR OWN comment on other users posts
 
-users are able to see the date and time of all comments
-users are able to see the id of all comment's creators
++users are able to see the date and time of all comments
++users are able to see the id of all comment's creators
 
 users are able to see the date and time a comment was edited
 users are able to see the date and time a post was edited

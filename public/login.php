@@ -23,7 +23,7 @@ if($_POST){
 
 		URL::restore();
 	}else{
-		echo "Failed to authenticate";
+		echo "Username or password failed to authenticate";
 	}
 
 }

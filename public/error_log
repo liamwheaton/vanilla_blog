@@ -27,3 +27,23 @@
 [12-Jun-2015 00:28:19 Pacific/Auckland] PHP Fatal error:  Cannot use object of type User as array in /home/liamwheaton/public_html/vanilla_blog/public/create_post.php on line 33
 [12-Jun-2015 00:28:25 Pacific/Auckland] PHP Fatal error:  Cannot use object of type User as array in /home/liamwheaton/public_html/vanilla_blog/public/create_post.php on line 33
 [12-Jun-2015 00:30:10 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/liamwheaton/public_html/vanilla_blog/public/create_post.php on line 21
+[12-Jun-2015 15:38:58 Pacific/Auckland] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/liamwheaton/public_html/vanilla_blog/views/header.php:22) in /home/liamwheaton/public_html/vanilla_blog/libraries/url.lib.php on line 35
+[12-Jun-2015 16:28:55 Pacific/Auckland] PHP Fatal error:  Class 'URL' not found in /home/liamwheaton/public_html/vanilla_blog/views/single_post.php on line 1
+[12-Jun-2015 16:29:32 Pacific/Auckland] PHP Fatal error:  Class 'URL' not found in /home/liamwheaton/public_html/vanilla_blog/views/single_post.php on line 2
+[12-Jun-2015 16:37:09 Pacific/Auckland] PHP Fatal error:  Class 'URL' not found in /home/liamwheaton/public_html/vanilla_blog/views/post_list.php on line 5
+[12-Jun-2015 16:37:13 Pacific/Auckland] PHP Fatal error:  Class 'URL' not found in /home/liamwheaton/public_html/vanilla_blog/views/post_list.php on line 5
+[12-Jun-2015 16:37:22 Pacific/Auckland] PHP Fatal error:  Class 'URL' not found in /home/liamwheaton/public_html/vanilla_blog/views/post_list.php on line 5
+[12-Jun-2015 17:29:44 Pacific/Auckland] PHP Fatal error:  Class 'Form' not found in /home/liamwheaton/public_html/vanilla_blog/views/comment_form.php on line 3
+[12-Jun-2015 17:58:55 Pacific/Auckland] PHP Fatal error:  Class 'Comment_collection' not found in /home/liamwheaton/public_html/vanilla_blog/views/single_post.php on line 28
+[12-Jun-2015 18:00:24 Pacific/Auckland] PHP Fatal error:  Class 'Comment_collection' not found in /home/liamwheaton/public_html/vanilla_blog/views/single_post.php on line 28
+[12-Jun-2015 18:01:07 Pacific/Auckland] PHP Fatal error:  Class 'Comment_collection' not found in /home/liamwheaton/public_html/vanilla_blog/views/single_post.php on line 28
+[12-Jun-2015 18:01:12 Pacific/Auckland] PHP Fatal error:  Class 'Comment_collection' not found in /home/liamwheaton/public_html/vanilla_blog/views/single_post.php on line 28
+[12-Jun-2015 22:08:03 Pacific/Auckland] PHP Fatal error:  Class 'URL' not found in /home/liamwheaton/public_html/vanilla_blog/public/index.php on line 14
+[12-Jun-2015 23:15:37 Pacific/Auckland] PHP Fatal error:  Class 'Post' not found in /home/liamwheaton/public_html/vanilla_blog/public/edit_comment.php on line 17
+[12-Jun-2015 23:16:05 Pacific/Auckland] PHP Warning:  require_once(../models/comment.post.php): failed to open stream: No such file or directory in /home/liamwheaton/public_html/vanilla_blog/public/edit_comment.php on line 10
+[12-Jun-2015 23:16:05 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../models/comment.post.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/liamwheaton/public_html/vanilla_blog/public/edit_comment.php on line 10
+[13-Jun-2015 18:49:51 Pacific/Auckland] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/liamwheaton/public_html/vanilla_blog/views/post_list.php on line 9
+[13-Jun-2015 18:50:13 Pacific/Auckland] PHP Fatal error:  Call to undefined method Posts_Collection::order_by() in /home/liamwheaton/public_html/vanilla_blog/views/post_list.php on line 9
+[13-Jun-2015 18:50:47 Pacific/Auckland] PHP Fatal error:  Call to undefined method Posts_Collection::order_by() in /home/liamwheaton/public_html/vanilla_blog/views/post_list.php on line 9
+[13-Jun-2015 18:51:52 Pacific/Auckland] PHP Fatal error:  Call to undefined method Posts_Collection::order_by() in /home/liamwheaton/public_html/vanilla_blog/views/post_list.php on line 12
+[13-Jun-2015 18:52:11 Pacific/Auckland] PHP Fatal error:  Call to undefined method Model::order_by() in /home/liamwheaton/public_html/vanilla_blog/views/post_list.php on line 12

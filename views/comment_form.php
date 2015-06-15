@@ -4,7 +4,7 @@
 
 		<div class="row">
 			<?= Form::label('content', 'Comment') ?>
-			<?= Form::textarea('content', $comment->content) ?>
+			<?= Form::textarea('content') ?>
 		</div>
 
 		<?= Form::submit() ?>

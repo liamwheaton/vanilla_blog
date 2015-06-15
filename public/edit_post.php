@@ -32,7 +32,7 @@ if ($_POST) {
 
 	$post->save();
 
-	URL::redirect('index.php');
+	URL::restore();
 }
 
 	#views

@@ -1,0 +1,22 @@
+body{
+	margin: 0 auto;
+	font-family: 'open-sans', Helvetica;
+}
+header{
+	max-width: 800px;
+	margin: 0 auto;
+}
+nav{
+	max-width: 800px;
+	margin: 0 auto;
+}
+.main{
+	max-width: 800px;
+	margin: 0 auto;
+}
+.comments, .comment{
+	width: 100%;
+}
+@media screen and (max-width: ) {
+    
+}
